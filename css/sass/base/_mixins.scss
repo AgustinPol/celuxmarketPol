@@ -1,0 +1,11 @@
+@mixin tipografía1 ($fuente, $color, $size, $bold, $decoration, $align, $margen, $padd, $borde) {
+    font-family: $fuente;
+    color: $color;
+    font-size: $size;
+    font-weight: $bold;
+    text-decoration: $decoration;
+    text-align: $align;
+    margin: $margen;
+    padding: $padd;
+    border: $borde
+}

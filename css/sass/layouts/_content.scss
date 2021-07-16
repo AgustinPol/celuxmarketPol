@@ -1,0 +1,146 @@
+/*ESTILOS INDEX*/
+
+.title {
+    margin: auto;
+    animation-name: mostrar;
+    animation-duration: 1.5s;
+}
+
+h1 { @include tipografía1 
+    ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
+    margin-right: 0.7rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.title__textoBienvenida { @include tipografía1 
+    ($myfont, $mypink, 3rem, null, null, start, 0.8rem, 0.4rem, null);
+    margin-left: 1.3rem;
+    animation-name: mostrar;
+    animation-duration: 1.5s;
+}
+
+.divProductos {
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+    padding: 3rem;
+    border: solid rgb(158, 158, 158);
+    align-content: center;
+    background-color: #fff;
+}
+
+.divProductos__preciosCelus { @include tipografía1 
+    ($myfont, #fff, 1.9rem, bold, null, center, 1px, 1px, null);
+    background-color: $mypink;
+}
+
+.divProductos__celuTitle { @include tipografía1
+    ($myfont, $myblue, 1.9rem, bold, null, center, 0.5rem, 0.5rem, null );
+}
+
+.divProductos__imgCelus {
+    width: 13.5rem;
+    height: 11.5rem;
+    align-content: center;
+    margin: auto;
+    padding: 0.5rem;
+    display: block;
+}
+
+.transiciónProductos {
+	width: 26rem;
+	height: 26rem;
+	transition: all 1s;
+}
+
+.transiciónProductos:hover {
+    transform: scale(1.1);
+	width: 27rem;
+	height: 27rem;
+}
+
+/*ESTILOS PRODUCTO ESPECIFICO */
+.divFichas {
+    font-size: 2.5rem;
+    text-align: start;
+    letter-spacing: 0.2rem;
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+/*MAPS y EXTEND*/
+$producto: (celular: $myblue, accesorio: $mypink);
+
+@each $nombre, $color in $producto {
+    .divFichas--#{$nombre} {
+        color: $color;
+        @extend .divFichas; 
+    } 
+}
+
+$tipo: (celular: $myblue, accesorio: $mypink);
+
+@each $nombre, $color in $tipo {
+    .title-#{$nombre} {
+        color: $color;
+        font-size: 2rem;
+        text-align: justify;
+        margin: 3rem;
+        padding: 1rem;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+}
+
+.divCelus {
+    background-color: #fff;
+    height: 30rem;
+    width: 30rem;
+    margin: 3rem;
+    padding: 3rem;
+    border: solid rgb(149, 157, 168);
+    display: block;
+}
+
+/*(CONDICIONALES)*/
+$producto: celular;
+
+.divCelus__preciosCelus2 {
+    @if $producto == celular {
+        @include tipografía1 
+        ($myfont, #fff, 1.9rem, bold, none, center, 0.5rem, 0.5rem, solid rgb(177, 177, 163) );
+        background-color: $mypink;
+    }
+     @else if $producto == accesorio {
+        @include tipografía1 
+        ($myfont, #fff, 1.9rem, bold, none, center, 0.5rem, 0.5rem, solid rgb(177, 177, 163) );
+        background-color: $myblue;
+    } 
+
+}
+
+.divCelus__preciosCelus2--bordesColor {
+    color: #fff;
+    background-color: $mypink;
+    font-size: 1.9rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    border: solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.divCelus__celusTitle { @include tipografía1 
+    ($myfont, $myblue, 1.9rem, bold, null, center, 0.5rem, 0.5rem, null);
+}
+
+.divCelus__imgDetalles {
+    width: 16rem;
+    height: 15rem;
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+

@@ -1,0 +1,9 @@
+/*MIXIN*/ /*ACORDEÓN*/
+.acordeon {
+    margin-top: 10rem;
+    z-index: 1;
+}
+
+.acordeonTitle { @include tipografía1
+    ($myfont, $mypink, 3rem, null, null, null, null, null, null);
+}

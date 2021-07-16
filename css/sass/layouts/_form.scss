@@ -1,0 +1,19 @@
+/*Formulario*/  /*BUCLE*/
+.formu {
+    color: $myblue;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+    display: inline-block;
+    animation-name: mostrar;
+    animation-duration: 1.5s;
+}
+@for $i from 1 through 4 {
+.formu__formulario-#{$i} {padding: 1.5rem;
+    margin: 1.5rem;}     
+}
+.formu__detalles {
+    font-size: 2.5rem;
+}
+      

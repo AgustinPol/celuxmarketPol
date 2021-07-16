@@ -1,0 +1,21 @@
+/*TAGS*/
+html {
+    font-size: 62.5%;   
+}
+
+body {
+    font-family: $myfont;
+    margin: auto;
+    background-color: #fff;
+    text-align: justify;
+    text-transform: none;
+
+    a {
+        text-decoration: none;
+    }
+    
+  
+    h4 { @include tipografía1 ($myfont, $myblue, 2.5rem, bold, null, start, 1rem, 1rem, null);
+        }
+    
+} 
