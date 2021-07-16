@@ -153,3 +153,22 @@ $producto: celular;
     color: #fff;
     font-size: 1.5rem;
 }
+
+.error404 {
+    background-color: #fff;
+}
+
+.erroresDiv {
+    color: $myblue;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-family: $myfont;
+}
+
+.erroresHome {
+    font-size: 3rem;
+    background-color: $mypink;
+    display: inline-block;
+    margin: 5rem;
+}
