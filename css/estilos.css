@@ -80,7 +80,7 @@ footer .contRedes {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: repeat(2, 30%);
+  grid-template-columns: repeat(2, 35%);
   grid-template-rows: auto;
   grid-template-areas: "area1 area2";
 }
@@ -124,7 +124,7 @@ footer .contRedes .area3 {
 
 footer .redesSociales {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: start;
   padding: 1.5rem;
   margin: 1.5rem;
