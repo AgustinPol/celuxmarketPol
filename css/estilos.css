@@ -140,6 +140,7 @@ footer .faceInsta {
   grid-template-areas: "title title" "face insta";
 }
 
+/*Formulario*/
 .formu {
   color: #4f9ce4;
   font-size: 2.5rem;
@@ -175,6 +176,7 @@ footer .faceInsta {
   font-size: 2.5rem;
 }
 
+/*Imágenes Gente*/
 .divGentes {
   margin-bottom: 3rem;
   display: inline-block;
@@ -190,7 +192,7 @@ footer .faceInsta {
   margin: 2px;
 }
 
-/*ESTILOS INDEX*/
+/*estilos títulos*/
 .title {
   margin: auto;
   animation-name: mostrar;
@@ -222,6 +224,7 @@ h1 {
   animation-duration: 1.5s;
 }
 
+/*estilos productos index*/
 .divProductos {
   width: 20rem;
   height: 20rem;
@@ -262,7 +265,7 @@ h1 {
   display: block;
 }
 
-/*ESTILOS PRODUCTO ESPECIFICO */
+/*ESTILOS Fichas Técnicas*/
 .divFichas, .divFichas--celular, .divFichas--accesorio {
   font-size: 2.5rem;
   text-align: start;
@@ -299,6 +302,7 @@ h1 {
   display: inline-block;
 }
 
+/*estilos celus y accesorios*/
 .divCelus {
   background-color: #fff;
   height: 30rem;
@@ -362,6 +366,7 @@ h1 {
   font-size: 1.5rem;
 }
 
+/*Página error 404*/
 .error404 {
   background-color: #fff;
 }
@@ -522,7 +527,6 @@ body h4 {
   height: 60rem;
 }
 
-/*MIXIN*/
 /*ACORDEÓN*/
 .acordeon {
   margin-top: 10rem;
@@ -565,7 +569,7 @@ body h4 {
   }
 }
 
-/*TRANSICIONES-ANIMACIONES*/
+/*Animación Títulos*/
 @keyframes mostrar {
   0% {
     opacity: 0;
@@ -575,6 +579,7 @@ body h4 {
   }
 }
 
+/*Animación divProductos*/
 .transiciónProductos {
   width: 26rem;
   height: 26rem;

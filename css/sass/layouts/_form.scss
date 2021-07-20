@@ -1,3 +1,4 @@
+/*Formulario*/
 .formu {
     color: $myblue;
     font-size: 2.5rem;
@@ -8,14 +9,17 @@
     animation-name: mostrar;
     animation-duration: 1.5s;
 }
+
 @for $i from 1 through 4 {
 .formu__formulario-#{$i} {padding: 1.5rem;
     margin: 1.5rem;}     
 }
+
 .formu__detalles {
     font-size: 2.5rem;
 }
 
+/*Imágenes Gente*/
 .divGentes {
     margin-bottom: 3rem;
     display: inline-block;

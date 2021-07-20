@@ -1,5 +1,4 @@
-/*ESTILOS INDEX*/
-
+/*estilos títulos*/
 .title {
     margin: auto;
     animation-name: mostrar;
@@ -21,6 +20,7 @@ h1 { @include tipografía1
     animation-duration: 1.5s;
 }
 
+/*estilos productos index*/
 .divProductos {
     width: 20rem;
     height: 20rem;
@@ -50,7 +50,7 @@ h1 { @include tipografía1
 }
 
 
-/*ESTILOS PRODUCTO ESPECIFICO */
+/*ESTILOS Fichas Técnicas*/
 .divFichas {
     font-size: 2.5rem;
     text-align: start;
@@ -81,7 +81,7 @@ $tipo: (celular: $myblue, accesorio: $mypink);
         display: inline-block;
     }
 }
-
+/*estilos celus y accesorios*/
 .divCelus {
     background-color: #fff;
     height: 30rem;
@@ -142,6 +142,7 @@ $producto: celular;
     font-size: 1.5rem;
 }
 
+/*Página error 404*/
 .error404 {
     background-color: #fff;
 }
