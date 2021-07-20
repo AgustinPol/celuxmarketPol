@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*VARIABLES*/
-/*VARIABLES FIN*/
 /*LAYOUTS*/
 /*HEADER*/
 header {
@@ -404,7 +403,6 @@ h1 {
   margin: auto;
 }
 
-/*LAYOUTS FIN*/
 /*COMPONENTS*/
 /*MENU DESPLEGABLE*/
 .menu {
@@ -591,6 +589,4 @@ body h4 {
   width: 27rem;
   height: 27rem;
 }
-
-/*COMPONENTS FIN*/
 /*# sourceMappingURL=estilos.css.map */

@@ -2,7 +2,6 @@
 @import "base/colors";
 @import "base/fonts";
 @import "base/mixins";
-/*VARIABLES FIN*/
 
 /*LAYOUTS*/
 @import "layouts/header";
@@ -10,7 +9,7 @@
 @import "layouts/form";
 @import "layouts/content";
 @import "layouts/nosotros";
-/*LAYOUTS FIN*/
+
 
 /*COMPONENTS*/
 @import "components/menú";
@@ -19,5 +18,4 @@
 @import "components/acordeon";
 @import "components/mediaquery";
 @import "components/animaciones";
-/*COMPONENTS FIN*/
 
