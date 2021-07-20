@@ -8,3 +8,15 @@
 		opacity: 1;
 	}
 }
+
+.transiciónProductos {
+	width: 26rem;
+	height: 26rem;
+	transition: all 1s;
+}
+
+.transiciónProductos:hover {
+    transform: scale(1.1);
+	width: 27rem;
+	height: 27rem;
+}

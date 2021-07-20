@@ -153,27 +153,27 @@ footer .faceInsta {
   animation-duration: 1.5s;
 }
 
-.formulario-1 {
+.formu__formulario-1 {
   padding: 1.5rem;
   margin: 1.5rem;
 }
 
-.formulario-2 {
+.formu__formulario-2 {
   padding: 1.5rem;
   margin: 1.5rem;
 }
 
-.formulario-3 {
+.formu__formulario-3 {
   padding: 1.5rem;
   margin: 1.5rem;
 }
 
-.formulario-4 {
+.formu__formulario-4 {
   padding: 1.5rem;
   margin: 1.5rem;
 }
 
-.detalles {
+.formu__detalles {
   font-size: 2.5rem;
 }
 
@@ -249,18 +249,6 @@ h1 {
   display: block;
 }
 
-.transiciónProductos {
-  width: 26rem;
-  height: 26rem;
-  transition: all 1s;
-}
-
-.transiciónProductos:hover {
-  transform: scale(1.1);
-  width: 27rem;
-  height: 27rem;
-}
-
 /*ESTILOS PRODUCTO ESPECIFICO */
 .divFichas, .divFichas--celular, .divFichas--accesorio {
   font-size: 2.5rem;
@@ -270,7 +258,6 @@ h1 {
   margin-left: 2rem;
 }
 
-/*MAPS y EXTEND*/
 .divFichas--celular {
   color: #4f9ce4;
 }
@@ -309,7 +296,6 @@ h1 {
   display: block;
 }
 
-/*(CONDICIONALES)*/
 .divCelus__preciosCelus2 {
   font-family: "Lato", sans-serif;
   color: #fff;
@@ -382,18 +368,6 @@ h1 {
   margin: 5rem;
 }
 
-.nosotrosTexto {
-  font-family: "Lato", sans-serif;
-  color: #e48d8d;
-  font-size: 2.8rem;
-  text-align: start;
-  margin: 1.3rem;
-  padding: 1.3rem;
-  animation-duration: 3s;
-  animation-name: mostrar;
-  z-index: 0;
-}
-
 .divGentes {
   margin-bottom: 3rem;
   display: inline-block;
@@ -408,6 +382,18 @@ h1 {
   border: solid;
   padding: 2px;
   margin: 2px;
+}
+
+.nosotrosTexto {
+  font-family: "Lato", sans-serif;
+  color: #e48d8d;
+  font-size: 2.8rem;
+  text-align: start;
+  margin: 1.3rem;
+  padding: 1.3rem;
+  animation-duration: 3s;
+  animation-name: mostrar;
+  z-index: 0;
 }
 
 /*LAYOUTS FIN*/
@@ -583,6 +569,18 @@ body h4 {
   100% {
     opacity: 1;
   }
+}
+
+.transiciónProductos {
+  width: 26rem;
+  height: 26rem;
+  transition: all 1s;
+}
+
+.transiciónProductos:hover {
+  transform: scale(1.1);
+  width: 27rem;
+  height: 27rem;
 }
 
 /*COMPONENTS FIN*/

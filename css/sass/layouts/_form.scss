@@ -10,9 +10,9 @@
     animation-duration: 1.5s;
 }
 @for $i from 1 through 4 {
-.formulario-#{$i} {padding: 1.5rem;
+.formu__formulario-#{$i} {padding: 1.5rem;
     margin: 1.5rem;}     
 }
-.detalles {
+.formu__detalles {
     font-size: 2.5rem;
 }

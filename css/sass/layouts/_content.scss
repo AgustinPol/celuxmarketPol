@@ -49,17 +49,6 @@ h1 { @include tipografía1
     display: block;
 }
 
-.transiciónProductos {
-	width: 26rem;
-	height: 26rem;
-	transition: all 1s;
-}
-
-.transiciónProductos:hover {
-    transform: scale(1.1);
-	width: 27rem;
-	height: 27rem;
-}
 
 /*ESTILOS PRODUCTO ESPECIFICO */
 .divFichas {
@@ -69,7 +58,7 @@ h1 { @include tipografía1
     list-style-type: disc;
     margin-left: 2rem;
 }
-/*MAPS y EXTEND*/
+
 $producto: (celular: $myblue, accesorio: $mypink);
 
 @each $nombre, $color in $producto {
@@ -103,7 +92,6 @@ $tipo: (celular: $myblue, accesorio: $mypink);
     display: block;
 }
 
-/*(CONDICIONALES)*/
 $producto: celular;
 
 .divCelus__preciosCelus2 {
