@@ -249,11 +249,10 @@ h1 {
 
 /*ESTILOS Fichas Técnicas*/
 .divFichas, .divFichas--celular, .divFichas--accesorio {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: start;
   letter-spacing: 0.2rem;
   list-style-type: disc;
-  margin-left: 2rem;
 }
 
 .divFichas--celular {
