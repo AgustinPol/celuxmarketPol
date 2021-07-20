@@ -140,8 +140,6 @@ footer .faceInsta {
   grid-template-areas: "title title" "face insta";
 }
 
-/*Formulario*/
-/*BUCLE*/
 .formu {
   color: #4f9ce4;
   font-size: 2.5rem;
@@ -175,6 +173,21 @@ footer .faceInsta {
 
 .formu__detalles {
   font-size: 2.5rem;
+}
+
+.divGentes {
+  margin-bottom: 3rem;
+  display: inline-block;
+  animation-duration: 3s;
+  animation-name: mostrar;
+}
+
+.divGentes__imgNosotros {
+  width: 36rem;
+  height: 25rem;
+  border: solid;
+  padding: 2px;
+  margin: 2px;
 }
 
 /*ESTILOS INDEX*/
@@ -368,22 +381,6 @@ h1 {
   margin: 5rem;
 }
 
-.divGentes {
-  margin-bottom: 3rem;
-  display: inline-block;
-  animation-duration: 3s;
-  animation-name: mostrar;
-}
-
-/*OPERACIÓN MATEMÁTICA*/
-.divGentes__imgNosotros {
-  width: 36rem;
-  height: 25rem;
-  border: solid;
-  padding: 2px;
-  margin: 2px;
-}
-
 .nosotrosTexto {
   font-family: "Lato", sans-serif;
   color: #e48d8d;
@@ -394,6 +391,12 @@ h1 {
   animation-duration: 3s;
   animation-name: mostrar;
   z-index: 0;
+}
+
+.mapaGoogle {
+  width: 35rem;
+  height: 35rem;
+  margin: auto;
 }
 
 /*LAYOUTS FIN*/
@@ -523,6 +526,7 @@ body h4 {
 /*ACORDEÓN*/
 .acordeon {
   margin-top: 10rem;
+  margin-bottom: 5rem;
   z-index: 1;
 }
 

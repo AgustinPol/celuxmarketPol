@@ -1,21 +1,13 @@
-.divGentes {
-    margin-bottom: 3rem;
-    display: inline-block;
-    animation-duration: 3s;
-	animation-name: mostrar;
-}
-/*OPERACIÓN MATEMÁTICA*/
-.divGentes__imgNosotros {
-    width: 6 * 6 + rem;
-    height: 25rem;
-    border: solid;
-    padding: 2px;
-    margin: 2px;
-}
 
 .nosotrosTexto { @include tipografía1 
     ($myfont, $mypink, 2.8rem, null, null, start, 1.3rem, 1.3rem, null);
     animation-duration: 3s;
 	animation-name: mostrar;
     z-index: 0;
+}
+
+.mapaGoogle {
+    width: 35rem;
+    height: 35rem;
+    margin: auto;
 }
