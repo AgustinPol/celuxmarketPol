@@ -132,20 +132,18 @@ $producto: celular;
 }
 
 .divBoton {
-    width: 1.5rem;
-    height:1.5rem;
-    border: solid black;
+    width: 15rem;
+    height:5rem;
     background-color: $myblue;
+    margin: 2rem;
 }
 
 .botonComprar {
     font-family: $myfont;
-    letter-spacing: 0.2rem;
-    margin: 2.5rem;
-    padding: 1rem;
-    background-color:#fff ;
+    letter-spacing: 0.1rem;
     color: #fff;
     font-size: 3rem;
+    text-align: center;
 }
 
 /*Página error 404*/

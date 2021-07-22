@@ -291,19 +291,17 @@ h1 {
   align-content: center; }
 
 .divBoton {
-  width: 1.5rem;
-  height: 1.5rem;
-  border: solid black;
-  background-color: #4f9ce4; }
+  width: 15rem;
+  height: 5rem;
+  background-color: #4f9ce4;
+  margin: 2rem; }
 
 .botonComprar {
   font-family: "Lato", sans-serif;
-  letter-spacing: 0.2rem;
-  margin: 2.5rem;
-  padding: 1rem;
-  background-color: #fff;
+  letter-spacing: 0.1rem;
   color: #fff;
-  font-size: 3rem; }
+  font-size: 3rem;
+  text-align: center; }
 
 /*Página error 404*/
 .error404 {
