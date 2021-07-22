@@ -131,14 +131,21 @@ $producto: celular;
     align-content: center;
 }
 
-.buttonCelu {
+.divBoton {
+    width: 1.5rem;
+    height:1.5rem;
+    border: solid black;
+    background-color: $myblue;
+}
+
+.botonComprar {
     font-family: $myfont;
     letter-spacing: 0.2rem;
     margin: 2.5rem;
     padding: 1rem;
-    background-color:$myblue ;
+    background-color:#fff ;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 /*Página error 404*/
