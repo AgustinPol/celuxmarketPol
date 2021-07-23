@@ -17,6 +17,7 @@
 
 .formu__detalles {
     font-size: 2.5rem;
+    width: 25rem;
 }
 
 /*Imágenes Gente*/
@@ -28,9 +29,10 @@
 }
 
 .divGentes__imgNosotros {
-    width: 6 * 6 + rem;
+    display: block;
+    width: 6 * 5 + rem;
     height: 25rem;
     border: solid;
-    padding: 2px;
-    margin: 2px;
+    margin: auto;
+    align-items: center;
 }

@@ -50,7 +50,7 @@
             }
 
             li {
-                background-color: rgb(38, 108, 189);
+                background-color: $myblue;
                 position: relative;
                 float:left;
                 margin:0%;
@@ -62,7 +62,7 @@
                 position:absolute;
                 top: 100%;
                 left:0%;
-                background:#eee;
+                background: #fff;
                 padding:0;
             
 
@@ -81,3 +81,4 @@
         }
     
 }
+

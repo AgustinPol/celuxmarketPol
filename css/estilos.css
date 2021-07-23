@@ -128,7 +128,8 @@ footer {
   margin: 1.5rem; }
 
 .formu__detalles {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  width: 25rem; }
 
 /*Imágenes Gente*/
 .divGentes {
@@ -138,11 +139,12 @@ footer {
   animation-name: mostrar; }
 
 .divGentes__imgNosotros {
-  width: 36rem;
+  display: block;
+  width: 30rem;
   height: 25rem;
   border: solid;
-  padding: 2px;
-  margin: 2px; }
+  margin: auto;
+  align-items: center; }
 
 /*estilos títulos*/
 .title {
@@ -376,7 +378,7 @@ h1 {
     .menu ul li:hover > ul {
       display: block; }
     .menu ul li {
-      background-color: #266cbd;
+      background-color: #4f9ce4;
       position: relative;
       float: left;
       margin: 0%;
@@ -386,7 +388,7 @@ h1 {
       position: absolute;
       top: 100%;
       left: 0%;
-      background: #eee;
+      background: #fff;
       padding: 0; }
       .menu ul ul a {
         line-height: 90%;
@@ -446,7 +448,7 @@ body {
     display: block; }
   .menu {
     position: absolute;
-    background: #1b3558;
+    background: #8ca5c7;
     width: 50%;
     margin-left: -50%;
     transition: all 0.5s;
