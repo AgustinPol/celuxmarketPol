@@ -2,6 +2,10 @@
 /*MENU RESPONSIVE*/
 @media (max-width:768px) {
 
+    .menu {
+        background-color: $myblue;
+    }
+
     .carousel {
         display: none;
     }

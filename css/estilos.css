@@ -446,6 +446,8 @@ body {
 
 /*MENU RESPONSIVE*/
 @media (max-width: 768px) {
+  .menu {
+    background-color: #4f9ce4; }
   .carousel {
     display: none; } }
 
