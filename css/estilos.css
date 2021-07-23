@@ -139,12 +139,11 @@ footer {
   animation-name: mostrar; }
 
 .divGentes__imgNosotros {
-  display: block;
   width: 30rem;
   height: 25rem;
   border: solid;
-  margin: auto;
-  align-content: center; }
+  display: block;
+  margin: 0 auto; }
 
 /*estilos títulos*/
 .title {
