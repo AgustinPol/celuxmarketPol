@@ -1,32 +1,36 @@
 
 /*MENU RESPONSIVE*/
 @media (max-width:768px) {
-    header label {
-        display: block;
-    }
+    // header label {
+    //     display: block;
+    // }
  
-    .menu {
-        position: absolute;
-        background: rgb(140, 165, 199);
-        width: 50%;
-        margin-left: -50%;
-        transition: all 0.5s;
-        z-index: 2;
-    }
+    // .menu {
+    //     position: absolute;
+    //     background: rgb(140, 165, 199);
+    //     width: 50%;
+    //     margin-left: -50%;
+    //     transition: all 0.5s;
+    //     z-index: 2;
+    // }
     
-    .menu ul {
-        flex-direction: column;
-        z-index: 2;
-    }
+    // .menu ul {
+    //     flex-direction: column;
+    //     z-index: 2;
+    // }
 
-    .menu li {
-        border-top: 2px solid #fff;
-        z-index: 2;
-    }
+    // .ul ul li:hover {
+    //    background-color: $mypink;
+    // }
 
-    #btn-menu:checked ~ .menu {
-        margin: 0;
-    }
+    // .menu li {
+    //     border-top: 2px solid #fff;
+    //     z-index: 2;
+    // }
+
+    // #btn-menu:checked ~ .menu {
+    //     margin: 0;
+    // }
 
     .carousel {
         display: none;

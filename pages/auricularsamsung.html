@@ -33,24 +33,38 @@
 <!--Finaliza boton whastapp-->
 
 <!--Comienza Header-->
-    <header>
-        <a href="../index.html"><img class="logoImagen iconoTransición" src="../images/logo1.png" alt="logo-página"></a>
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img class="iconoMenu" src="../images/iconomenu.png" alt="icono-menu"></label>
-        <nav class="menu">
-            <ul class="navmenu horizontal"> 
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="productos.html">Productos</a>
-                <ul>
-                    <li><a href="celulares.html">Celulares</a></li>
-                    <li><a href="accesorios.html">Accesorios</a></li>
-                </ul>
-                </li>
+<header>
+  <a href="../index.html"><img class="logoImagen iconoTransición" src="../images/logo1.png" alt="logo-página"></a>
+  <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+    <div class="menu container-fluid">
+      <button class="menu navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menuAgus" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="celulares.html">Celulares</a></li>
+              <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
             </ul>
-        </nav> 
-    </header>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 <!--Finaliza Header-->
 
 

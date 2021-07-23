@@ -35,7 +35,7 @@
                 font-size: 2rem;
                 padding: 15px;
                 margin: 1px;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: $myfont;
                 letter-spacing: 4px;
             }
 
@@ -61,7 +61,6 @@
                 position:absolute;
                 top: 100%;
                 left:0%;
-                background: #fff;
                 padding:0;
             
 
@@ -81,3 +80,6 @@
     
 }
 
+.menuAgus {
+    background-color: $myblue;
+}
