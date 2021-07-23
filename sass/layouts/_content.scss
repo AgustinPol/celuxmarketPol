@@ -2,7 +2,7 @@
 .title {
     margin: auto;
     animation-name: mostrar;
-    animation-duration: 1.5s;
+    animation-duration: 1.1s;
 }
 
 h1 { @include tipografía1 
@@ -17,7 +17,7 @@ h1 { @include tipografía1
     ($myfont, $mypink, 3rem, null, null, start, 0.8rem, 0.4rem, null);
     margin-left: 1.3rem;
     animation-name: mostrar;
-    animation-duration: 1.5s;
+    animation-duration: 1.1s;
 }
 
 /*estilos productos index*/
