@@ -344,58 +344,6 @@ h1 {
   padding: 0%;
   animation-name: mostrar;
   animation-duration: 1s; }
-  .menu li a {
-    display: block;
-    padding: 1rem 1rem;
-    margin: 1rem 1rem;
-    color: #fff;
-    text-decoration: none; }
-  .menu ul {
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    justify-content: flex-start; }
-    .menu ul .horizontal li {
-      display: block;
-      float: left;
-      padding: 0%;
-      margin: 0%; }
-    .menu ul a {
-      display: block;
-      color: #fff;
-      background: rgba(0, 0, 0, 0.3);
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 2rem;
-      padding: 1.5rem;
-      margin: 1px;
-      font-family: "Lato", sans-serif;
-      letter-spacing: 4px; }
-    .menu ul li:hover {
-      background: rgba(0, 0, 0, 0.3);
-      z-index: 3; }
-    .menu ul li:hover > ul {
-      display: block; }
-    .menu ul li {
-      background-color: #4f9ce4;
-      position: relative;
-      float: left;
-      margin: 0%;
-      padding: 0%; }
-    .menu ul ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0%;
-      padding: 0; }
-      .menu ul ul a {
-        line-height: 90%;
-        padding: 10%; }
-      .menu ul ul li {
-        float: none;
-        width: 17.5rem;
-        z-index: 2; }
 
 .menuAgus {
   background-color: #4f9ce4; }
