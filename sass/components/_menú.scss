@@ -30,17 +30,18 @@
             a {
                 display: block;
                 color: #fff;
+                background: rgba(0,0,0,0.3);
                 text-decoration: none;
                 font-weight: bold;
                 font-size: 2rem;
-                padding: 15px;
+                padding: 1.5rem;
                 margin: 1px;
                 font-family: $myfont;
                 letter-spacing: 4px;
             }
 
             li:hover {
-                background: $mypink;
+                background: rgba(0,0,0,0.3);
                 z-index: 3;
             }
 

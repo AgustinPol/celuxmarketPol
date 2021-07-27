@@ -364,15 +364,16 @@ h1 {
     .menu ul a {
       display: block;
       color: #fff;
+      background: rgba(0, 0, 0, 0.3);
       text-decoration: none;
       font-weight: bold;
       font-size: 2rem;
-      padding: 15px;
+      padding: 1.5rem;
       margin: 1px;
       font-family: "Lato", sans-serif;
       letter-spacing: 4px; }
     .menu ul li:hover {
-      background: #e48d8d;
+      background: rgba(0, 0, 0, 0.3);
       z-index: 3; }
     .menu ul li:hover > ul {
       display: block; }
