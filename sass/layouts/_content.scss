@@ -5,14 +5,6 @@
     animation-duration: 1.1s;
 }
 
-h1 { @include tipografía1 
-    ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
-    margin-right: 0.7rem;
-    margin-left: 1.3rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
-
 .title__textoBienvenida { @include tipografía1 
     ($myfont, $mypink, 3rem, null, null, start, 0.8rem, 0.4rem, null);
     margin-left: 1.3rem;
@@ -20,6 +12,13 @@ h1 { @include tipografía1
     animation-duration: 1.1s;
 }
 
+h1 { @include tipografía1 
+    ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
+    margin-right: 0.7rem;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 /*estilos productos index*/
 .divProductos {
     width: 20rem;
