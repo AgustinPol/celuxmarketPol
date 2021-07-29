@@ -125,8 +125,8 @@ footer {
 
 /*Imágenes Gente*/
 .divGentes {
-  margin-bottom: 3rem;
-  display: inline-block;
+  display: block;
+  margin: auto;
   animation-duration: 1.5s;
   animation-name: mostrar; }
 
@@ -135,7 +135,8 @@ footer {
   height: 25rem;
   border: solid;
   display: block;
-  margin: 0 auto; }
+  margin: 2rem;
+  align-content: center; }
 
 /*estilos títulos*/
 .title {
