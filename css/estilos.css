@@ -401,6 +401,9 @@ h1 {
 .dropdown-item:hover {
   background-color: rgba(0, 0, 0, 0.3); }
 
+.colorNavbar {
+  color: #fff !important; }
+
 /*TAGS*/
 html {
   font-size: 62.5%; }
