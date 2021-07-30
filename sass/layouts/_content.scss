@@ -54,7 +54,7 @@ h1 { @include tipografía1
     font-size: 2rem;
     text-align: start;
     letter-spacing: 0.2rem;
-    list-style-type: disc;
+    font-weight: bold;
 }
 
 $producto: (celular: $myblue, accesorio: $mypink);
@@ -72,11 +72,10 @@ $tipo: (celular: $myblue, accesorio: $mypink);
     .title-#{$nombre} {
         color: $color;
         font-size: 2rem;
-        text-align: justify;
-        margin: 3rem;
+        text-align: start;
+        margin: 1rem;
         padding: 1rem;
-        letter-spacing: 2px;
-        display: inline-block;
+        font-weight: bold;
     }
 }
 /*estilos celus y accesorios*/
@@ -134,10 +133,11 @@ $producto: celular;
     width: 15rem;
     height:5rem;
     background-color: $myblue;
-    margin: 2rem;
+    margin: 2.5rem;
+    margin-left: 3rem;
 }
 
-.botonComprar {
+.divBoton__botonComprar {
     font-family: $myfont;
     letter-spacing: 0.1rem;
     color: #fff;
