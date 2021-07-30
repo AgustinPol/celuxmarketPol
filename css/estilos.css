@@ -305,6 +305,25 @@ h1 {
   display: inline-block;
   margin: 5rem; }
 
+/*INFO-PAGOS-ENVIOS*/
+.divInfo {
+  width: 19rem;
+  height: 19rem;
+  margin-right: 12rem;
+  margin-bottom: 3rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold; }
+
+.imgInfo {
+  width: 17rem;
+  height: 17rem;
+  margin: auto;
+  display: inline-block; }
+
 .nosotrosTexto {
   font-family: "Lato", sans-serif;
   color: #e48d8d;
@@ -382,6 +401,7 @@ h1 {
     .menu .menu ul li:hover > ul {
       display: block; }
 
+/*MODIFICACIONES DEL MENÚ DE BOOTSTRAP*/
 .menuAgus {
   background: #134877;
   background: -moz-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
