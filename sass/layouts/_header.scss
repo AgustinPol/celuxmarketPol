@@ -3,11 +3,6 @@ header {
     font-size: 2.5rem;
     width: 100%;
     height: 100%;
-    background: rgb(19,72,119);
-    background: -moz-linear-gradient(135deg, rgba(19,72,119,1) 0%, rgba(16,120,198,1) 0%, rgba(16,120,198,1) 40%, rgba(11,23,33,1) 100%);
-    background: -webkit-linear-gradient(135deg, rgba(19,72,119,1) 0%, rgba(16,120,198,1) 0%, rgba(16,120,198,1) 40%, rgba(11,23,33,1) 100%);
-    background: linear-gradient(135deg, rgba(19,72,119,1) 0%, rgba(16,120,198,1) 0%, rgba(16,120,198,1) 40%, rgba(11,23,33,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1);
    
     label {
         display: none;
@@ -28,21 +23,13 @@ header {
         display: none;
     }
 
-    
-    .iconoTransición {
-        width: 15rem;
-        height: 13rem;
-        transition: all 1s;
+    .divLogo {
+        width: auto;
     }
 
-    .iconoTransición:hover {
-        transform: scale(1.1);
-        width: 16.5rem;
-        height: 13.5rem;
-    } 
-
     .logoImagen {
-        width: 15rem;
-        height: 13rem;
+        
+        width: 100%;
+        height: 30rem;
     }
 }
