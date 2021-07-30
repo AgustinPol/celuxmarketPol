@@ -1,13 +1,4 @@
 
-/*Animación Títulos*/
-@keyframes mostrar {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
 
 /*Animación divProductos*/
 .transiciónProductos {
@@ -18,6 +9,6 @@
 
 .transiciónProductos:hover {
     transform: scale(1.1);
-	width: 27rem;
-	height: 27rem;
+	width: 26.3rem;
+	height: 26.3rem;
 }
