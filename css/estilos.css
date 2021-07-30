@@ -30,7 +30,7 @@ footer {
   background: -webkit-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   background: linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1);
-  width: auto;
+  width: 100%;
   height: auto; }
   footer .faceInsta {
     display: grid;
