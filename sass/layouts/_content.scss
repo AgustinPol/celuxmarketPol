@@ -3,6 +3,8 @@
     margin-bottom: 4rem;
     margin-top: 4rem;
     margin-left: 3rem;
+    animation-name: mostrar;
+    animation-duration: 0.5s;
 }
 
 .title__textoBienvenida { @include tipografía1 

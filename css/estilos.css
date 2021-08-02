@@ -139,7 +139,9 @@ footer {
 .title {
   margin-bottom: 4rem;
   margin-top: 4rem;
-  margin-left: 3rem; }
+  margin-left: 3rem;
+  animation-name: mostrar;
+  animation-duration: 0.5s; }
 
 .title__textoBienvenida {
   font-family: "Lato", sans-serif;
@@ -486,3 +488,10 @@ html {
   transform: scale(1.1);
   width: 26.3rem;
   height: 26.3rem; }
+
+/*TRANSICIONES-ANIMACIONES*/
+@keyframes mostrar {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
