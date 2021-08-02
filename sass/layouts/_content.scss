@@ -23,11 +23,12 @@ h1 { @include tipografía1
 .divProductos {
     width: 20rem;
     height: 20rem;
-    margin: 3rem;
-    padding: 3rem;
+    margin: 4rem;
+    padding: 4rem;
     border: solid rgb(158, 158, 158);
     align-content: center;
     background-color: #fff;
+    display: inline-block;
 }
 
 .divProductos__preciosCelus { @include tipografía1 
