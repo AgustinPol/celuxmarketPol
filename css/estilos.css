@@ -124,7 +124,7 @@ footer {
 .divGentes {
   display: block;
   margin: auto;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   animation-name: mostrar; }
 
 .divGentes__imgNosotros {
@@ -336,7 +336,7 @@ h1 {
   text-align: start;
   margin: 1.3rem;
   padding: 1.3rem;
-  animation-duration: 1.5s;
+  animation-duration: 0.5s;
   animation-name: mostrar;
   z-index: 0; }
 
