@@ -5,7 +5,12 @@
 header {
   font-size: 2.5rem;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #134877;
+  background: -moz-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
+  background: -webkit-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
+  background: linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1); }
   header label {
     display: none;
     margin: auto; }
@@ -18,10 +23,13 @@ header {
   header #btn-menu {
     display: none; }
   header .divLogo {
-    width: auto; }
-  header .logoImagen {
+    display: block;
+    margin: auto;
     width: 100%;
-    height: 30rem; }
+    height: 60%; }
+  header .logoImagen {
+    width: 55rem;
+    height: 25rem; }
 
 /*FOOTER*/
 footer {
