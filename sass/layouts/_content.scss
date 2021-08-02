@@ -169,14 +169,12 @@ $producto: celular;
 .divInfo {
     width: 19rem;
     height: 19rem;
-    margin-right:6rem;
-    margin-bottom: 5rem;
-    margin-left: 4rem;
-    margin-top: 5rem;
-    display: inline-block;
     font-size: 1.5rem;
     text-align: center;
     font-weight: bold;
+    display: block;
+    margin:auto;
+    margin-bottom: 2rem;
 }   
 
 .imgInfo {
