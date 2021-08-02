@@ -10,16 +10,6 @@
     margin-left: 1.3rem;
 }
 
-.stockDiv {
-    display: inline-block;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 5rem;
-    text-align: center;
-}
-
-
 h1 { @include tipografía1 
     ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
     margin-right: 0.7rem;
