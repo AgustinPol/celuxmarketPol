@@ -6,8 +6,7 @@
     padding: 0.5rem;
     width: 50%;
     display: inline-block;
-    animation-name: mostrar;
-    animation-duration: 1.1s;
+    align-content: center;
 }
 
 @for $i from 1 through 4 {
@@ -17,7 +16,7 @@
 
 .formu__detalles {
     font-size: 2.5rem;
-    width: 25rem;
+    width: 27rem;
 }
 
 /*Imágenes Gente*/

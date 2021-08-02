@@ -92,8 +92,7 @@ footer {
   padding: 0.5rem;
   width: 50%;
   display: inline-block;
-  animation-name: mostrar;
-  animation-duration: 1.1s; }
+  align-content: center; }
 
 .formu__formulario-1 {
   padding: 1.5rem;
@@ -113,7 +112,7 @@ footer {
 
 .formu__detalles {
   font-size: 2.5rem;
-  width: 25rem; }
+  width: 27rem; }
 
 /*Imágenes Gente*/
 .divGentes {
@@ -132,9 +131,9 @@ footer {
 
 /*estilos títulos*/
 .title {
-  margin-bottom: 5rem;
-  margin-top: 5rem;
-  margin-left: 6rem; }
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  margin-left: 3rem; }
 
 .title__textoBienvenida {
   font-family: "Lato", sans-serif;
