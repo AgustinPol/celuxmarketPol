@@ -13,9 +13,11 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1); }
   header .divLogo {
     width: 100%;
-    height: 65%; }
+    height: 65%;
+    animation-name: mostrar;
+    animation-duration: 0.5s; }
   header .logoImagen {
-    width: 100%;
+    width: 25rem;
     height: 25rem; }
 
 /*FOOTER*/
