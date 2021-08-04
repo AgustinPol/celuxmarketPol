@@ -40,14 +40,6 @@ footer {
       display: inline-block;
       width: 5.5rem;
       height: 5.5rem; }
-      footer .faceInsta .divRedes .redesTranslate {
-        width: 5rem;
-        height: 5rem;
-        transition: all 1s; }
-      footer .faceInsta .divRedes .redesTranslate:hover {
-        width: 5.5rem;
-        height: 5.5rem;
-        transform: scale(1.1); }
       footer .faceInsta .divRedes .imgRedes {
         width: 5rem;
         height: 5rem;
