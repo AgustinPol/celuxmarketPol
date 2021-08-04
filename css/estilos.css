@@ -341,9 +341,7 @@ h1 {
 /*MENU DESPLEGABLE*/
 .menu {
   margin: 0%;
-  padding: 0%;
-  animation-name: mostrar;
-  animation-duration: 1s; }
+  padding: 0%; }
   .menu .menu ul {
     color: rgba(0, 0, 0, 0.3);
     list-style: none;
