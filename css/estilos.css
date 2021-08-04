@@ -335,7 +335,8 @@ h1 {
 .mapaGoogle {
   width: 35rem;
   height: 35rem;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 4rem; }
 
 /*COMPONENTS*/
 /*MENU DESPLEGABLE*/
