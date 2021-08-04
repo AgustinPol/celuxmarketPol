@@ -156,6 +156,7 @@ h1 {
   margin: 4rem;
   padding: 4rem;
   border: solid #9e9e9e;
+  border-radius: 2rem;
   align-content: center;
   background-color: #fff;
   display: inline-block; }
@@ -226,6 +227,7 @@ h1 {
   margin: 3rem;
   padding: 3rem;
   border: solid #959da8;
+  border-radius: 2rem;
   display: block; }
 
 .divCelus__preciosCelus2 {

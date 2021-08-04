@@ -26,6 +26,7 @@ h1 { @include tipografía1
     margin: 4rem;
     padding: 4rem;
     border: solid rgb(158, 158, 158);
+    border-radius: 2rem;
     align-content: center;
     background-color: #fff;
     display: inline-block;
@@ -88,6 +89,7 @@ $tipo: (celular: $myblue, accesorio: $mypink);
     margin: 3rem;
     padding: 3rem;
     border: solid rgb(149, 157, 168);
+    border-radius: 2rem;
     display: block;
 }
 
