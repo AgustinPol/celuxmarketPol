@@ -331,7 +331,8 @@ h1 {
   width: 35rem;
   height: 35rem;
   margin: auto;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  margin-top: 2rem; }
 
 /*COMPONENTS*/
 /*MENU DESPLEGABLE*/
@@ -450,7 +451,7 @@ html {
 .acordeon {
   margin-top: 10rem;
   margin-bottom: 5rem;
-  z-index: 1; }
+  z-index: 0; }
 
 .acordeonTitle {
   font-family: "Lato", sans-serif;
