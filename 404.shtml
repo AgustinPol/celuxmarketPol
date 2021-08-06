@@ -13,10 +13,9 @@
     <!--Google Font Fin-->
 
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="../css/whatsapp.css">
-    <link rel="stylesheet" href="../normalize.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <!--Fin de estilos CSS-->
 </head>
 
@@ -28,12 +27,12 @@
    </div>
     
    <div class="divBoton">
-    <a href="../index.html"><p class="divBoton__botonComprar">ir al home</p></a>
+    <a href="index.html"><p class="divBoton__botonComprar">ir al home</p></a>
   </div>
 </div>
 
 <div>
-  <img src="../images/404-error.svg" alt="imagen-error-404">
+  <img src="images/404-error.svg" alt="imagen-error-404">
 </div>
 <!--Fin contenido principal-->
 </body>
