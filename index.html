@@ -12,6 +12,9 @@
     <!--Título-->
     <title>Celuxmarket</title>
 
+    <!--CDN JQuery-->
+    <script src="javascript/jquery.js" defer></script>
+
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -22,6 +25,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javascript/cliente.js" defer></script>
+    <script src="javascript/main.js" defer></script>
+    <script src="javascript/bootstrap.bundle.min.js" defer></script> 
     </head>
     
 <body>  
@@ -51,21 +57,25 @@
                   <a class="nav-link colorNavbar active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link colorNavbar" href="#" onclick="renderizarProductos('celular')">Celulares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link colorNavbar" href="#" onclick="renderizarProductos('accesorio')">Accesorios</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link colorNavbar" href="pages/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link colorNavbar" href="pages/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link colorNavbar dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Productos
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="pages/celulares.html">Celulares</a></li>
-                    <li><a class="dropdown-item" href="pages/accesorios.html">Accesorios</a></li>
-                  </ul>
-                </li>
               </ul>
+              <form class="d-flex">
+                <button id="carritoModalBoton" class="btn btn-contador btn-outline-dark" type="button" data-bs-toggle="modal">
+                    <i class="bi-cart-fill me-1"></i>
+                    Carrito
+                    <span id="contador-carrito" class="badge bg-white text-dark ms-1 rounded-pill">0</span>
+                </button>
+              </form>
             </div>
           </div>
         </nav>
@@ -86,6 +96,34 @@
       </div>
     </div>  
     <!--Finaliza título-->
+
+       <!--Comienza info-->
+<div class="container-lg">
+  <div class="row">     
+    <div class="col-lg-4">
+      <div class="divInfo">
+        <img class="imgInfo" src="images/forma-de-pago.webp" alt="hasta-6-cuotas-sin-interes">
+        <p>!Hasta 6 cuotas sin interés!</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="divInfo">
+        <img class="imgInfo" src="images/envios-logo.webp" alt="envios-caba-gba">
+        <p>Envíos Gratis Caba y Gba</p>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="divInfo">
+        <img class="imgInfo" src="images/covid-logo.webp" alt="te-cuidamos-del-covid">
+        <p>¡Sin salir de casa!</p>
+      </div>
+    </div>
+  </div> 
+</div>
+  <!--Finaliza info-->
+
+    <!--CARDS-->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="container-js"></div>
 
     <!--Comienza Carousel-->
     <div id="carouselExampleControls" class="carousel slide carouselSize" data-bs-ride="carousel">
@@ -114,30 +152,100 @@
     </div>
     <!--Finaliza Carousel-->
 
-      <!--Comienza info-->
-<div class="container-lg">
-  <div class="row">     
-    <div class="col-lg-4">
-      <div class="divInfo">
-        <img class="imgInfo" src="images/forma-de-pago.webp" alt="hasta-6-cuotas-sin-interes">
-        <p>!Hasta 6 cuotas sin interés!</p>
+    
+<!--MODAL CARRITO LLENO-->
+<div class="modal fade" id="idModalCarrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Tu Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+           <!--CARRITO-->
+    <div class="divCarrito container-lg">
+      <div class="row">
+
+        <div class="col-lg-6">
+          <ul id="listaCarrito" class="list-group"></ul>
+          <!--Total Compra -->
+          <div>
+           <p id="totalCarrito" class="text-right">Total: $ <span id="total"></span> (ars);</p>
+          </div>         
+          <button id="boton-vaciar" class="btn btn-outline-dark">Vaciar Carrito</button>
+          <button id="boton-comprar" class="btn btn-outline-dark">Comprar</button>
+        </div>
+          <!--Formulario-->
+          <div class="divForm col-lg-6">
+            <h6 class="textForm">Llena el formulario para continuar la compra</h6>
+            <form id="formulario">
+              <input class="form-control" type="text" placeholder="Ingrese su nombre y apellido" id="nombre"><br>
+              <input class="form-control" type="number" placeholder="Ingrese su edad (mayor 18)" id="edad"><br>     
+              <input class="form-control" type="number" placeholder="Ingrese su dni" id="dni"><br>
+              <input class="form-control" type="text" placeholder="Ingrese su dirección" id="direccion"><br>
+              <input class="form-control" type="email" placeholder="Ingrese su email" id="email"><br>
+              <input class="form-control" type="number" placeholder="Ingrese su telefóno (8 caracteres)" id="telefono"><br>
+              <input type="button" class="btn btn-outline-dark btn-refresh" value="Refrescar" onclick="reiniciarForm();">
+              <button id="btn-validar" class="btn btn-outline-dark" type="button" onclick="validarCliente()">Validar Datos</button>
+            </form>
+
+            <div class="datosIncorrectos">
+              <h5>Tus datos son incorrectos/incompletos. Vuelve a intentarlo.</h5>
+            </div>
+
+        
+          </div>
+            <div class="datosCorrectos">
+              <h5>Tus datos son válidos. A continuación te dejamos el link de pago!</h5>
+              <button id="btn-comprar" class="btn btn-outline-dark">Ir al link de pago</button>
+            </div>
+          
+         </div>
+      
+        </div>
+       </div>
+      <div class="modal-footer">
+        <button type="button" id="boton-seguir" class="btn btn-outline-dark" data-bs-dismiss="modal">Volver al sitio</button>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="divInfo">
-        <img class="imgInfo" src="images/envios-logo.webp" alt="envios-caba-gba">
-        <p>Envíos Gratis Caba y Gba</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="divInfo">
-        <img class="imgInfo" src="images/covid-logo.webp" alt="te-cuidamos-del-covid">
-        <p>¡Sin salir de casa!</p>
-      </div>
-    </div>
-  </div> 
+  </div>
 </div>
-  <!--Finaliza info-->
+
+<!--MODAL CARRITO VACÍO-->
+<div class="modal fade" id="modalCarritoVacio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¡Estimado Cliente!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5>Su carrito esta vacío!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--MODAL CAPTURA DE DATOS-->
+<div class="modal fade" id="capturaDatosCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">¡Estimad@ Cliente!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h5> Ya tenemos sus datos para el envío y se generó el link de pago!</h5>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--Comienza Footer-->
 <footer>
@@ -160,7 +268,6 @@
               <img src="images/insta-icon.webp" class="imgRedes" alt="instagram-icono">
               </a>
           </div> 
-
         </div>
 
       </div>
@@ -178,9 +285,6 @@
   </div>
 </footer>
 <!--Finaliza Footer-->
-
-<!--Javascript bundle-->
-<script src="javascript/bootstrap.bundle.min.js"></script> 
 
 </body>
 

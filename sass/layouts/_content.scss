@@ -21,20 +21,11 @@ h1 { @include tipografía1
 }
 /*estilos productos index*/
 .divProductos {
-    width: 20rem;
-    height: 20rem;
-    margin: 4rem;
-    padding: 4rem;
-    border: solid rgb(158, 158, 158);
-    border-radius: 2rem;
-    align-content: center;
-    background-color: #fff;
-    display: inline-block;
+    border: solid 0.1rem black;
 }
 
 .divProductos__preciosCelus { @include tipografía1 
     ($myfont, #fff, 1.9rem, bold, null, center, 1px, 1px, null);
-    background-color: $mypink;
 }
 
 .divProductos__celuTitle { @include tipografía1
@@ -187,4 +178,34 @@ $producto: celular;
     height: 17rem;
     margin: auto;
     display: inline-block;
+}
+
+#btn-add {
+    display: block;
+    margin: auto;
+    font-size: 1.7rem;
+    width: 15rem;
+    height: 4.5rem;
+    background-color: $myblue;
+}
+
+#btn-add:hover {
+    background-color: rgba(20, 19, 19, 0.753);
+}
+
+.btn-contador {
+    margin-left: 3rem;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+
+.itemCarrito{
+    background-image: linear-gradient(to right, rgba(49, 49, 49, 0.808) , rgba(0, 0, 0,0.8));
+}
+
+.textForm {
+    margin-left: 1rem;
 }
