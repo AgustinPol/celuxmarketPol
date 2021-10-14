@@ -191,7 +191,7 @@ function renderizarProductos(filtro = 'default') {
   <div class="card-body">
     <h5 class="card-title divProductos__celuTitle">${product.name}</h5>
     <h5 class="card-text divProductos__celuTitle">${product.brand}</h5>
-    <p class="card-text divProductos__preciosCelus">${product.price}</p>
+    <p class="card-text divProductos__preciosCelus">$${product.price}</p>
     <button id="btn-add" onclick="agregarAlCarrito('${product.id}')" class="btn btn-outline-dark mt-auto">Agregar al Carrito</button>
   </div>
 </div>

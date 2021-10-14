@@ -33,31 +33,64 @@
 
 <!--Comienza Header-->
 <header>
-  <!--Logo-->
-  <div class="divLogo">
-    <a href="../index.html"><img class="logoImagen" src="../images/azulito.webp" alt="logo-página"></a>
-  </div>
-  <!--Navbar-->
-  <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
-    <div class="menu container-fluid">
-      <button class="menu navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse menuAgus" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link colorNavbar active" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorNavbar" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link colorNavbar" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <div class="container-lg">
+    <div class="row">
+
+      <!--Comienza Carousel-->
+      <div id="carouselExampleControls" class="carousel row-lg-6 slide carouselSize" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/azulito.webp" class="d-block img-logo" alt="logo-empresa">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/carousel-motog.webp" class="d-block w-100 imgCarousel" alt="logo-motorola">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/caoursel-moto.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/carousel-s10.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/carousel-xiaomi.webp" class="d-block w-100 imgCarousel" alt="logo-xiaomi">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+  <!--Finaliza Carousel-->
     </div>
-  </nav>
+  </div>
+    
+
+  <!--Navbar-->    
+    <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
+      <div class="menu container-fluid">
+        <button class="menu navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menuAgus" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link colorNavbar active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorNavbar" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colorNavbar" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
 </header>
 <!--Finaliza Header-->
 

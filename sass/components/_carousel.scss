@@ -2,14 +2,21 @@
 /*CAROUSEL*/
 .carouselSize {
     width: 100%;
-    height: 55rem;
-    display: block;
+    height: 32rem;
+    display: inline-block;
     margin: auto;
-    margin-top: 2rem;
     align-content: center;
 }
 
 .imgCarousel {
-    width: 10rem;
-    height: 50rem;
+    width: 12rem;
+    height: 32rem;
+    border-radius: 5px;
+}
+
+.img-logo {
+    display: block;
+    margin: auto;
+    width: 25rem;
+    height: 30rem;
 }

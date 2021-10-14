@@ -41,10 +41,42 @@
 
   <!--Comienza Header-->
     <header>
-      <!--Logo-->    
-        <div class="divLogo">
-          <a href="index.html"><img class="logoImagen" src="images/azulito.webp" alt="logo-página"></a>
+      <div class="container-lg">
+        <div class="row">
+  
+          <!--Comienza Carousel-->
+          <div id="carouselExampleControls" class="carousel row-lg-6 slide carouselSize" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/azulito.webp" class="d-block img-logo" alt="logo-empresa">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel-motog.webp" class="d-block w-100 imgCarousel" alt="logo-motorola">
+              </div>
+              <div class="carousel-item">
+                <img src="images/caoursel-moto.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel-s10.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel-xiaomi.webp" class="d-block w-100 imgCarousel" alt="logo-xiaomi">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      <!--Finaliza Carousel-->
         </div>
+      </div>
+        
+
       <!--Navbar-->    
         <nav class="menu navbar navbar-expand-lg navbar-light bg-light">
           <div class="menu container-fluid">
@@ -57,10 +89,10 @@
                   <a class="nav-link colorNavbar active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link colorNavbar" href="#" onclick="renderizarProductos('celular')">Celulares</a>
+                  <a class="nav-link colorNavbar" onclick="renderizarProductos('celular')">Celulares</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link colorNavbar" href="#" onclick="renderizarProductos('accesorio')">Accesorios</a>
+                  <a class="nav-link colorNavbar" onclick="renderizarProductos('accesorio')">Accesorios</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link colorNavbar" href="pages/nosotros.html">Nosotros</a>
@@ -97,6 +129,9 @@
     </div>  
     <!--Finaliza título-->
 
+    <!--CARDS-->
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="container-js"></div>
+
        <!--Comienza info-->
 <div class="container-lg">
   <div class="row">     
@@ -121,37 +156,6 @@
   </div> 
 </div>
   <!--Finaliza info-->
-
-    <!--CARDS-->
-    <div class="row row-cols-1 row-cols-md-3 g-4" id="container-js"></div>
-
-    <!--Comienza Carousel-->
-    <div id="carouselExampleControls" class="carousel slide carouselSize" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/carousel-motog.webp" class="d-block w-100 imgCarousel" alt="logo-motorola">
-        </div>
-        <div class="carousel-item">
-          <img src="images/caoursel-moto.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel-s10.webp" class="d-block w-100 imgCarousel" alt="logo-samsung">
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel-xiaomi.webp" class="d-block w-100 imgCarousel" alt="logo-xiaomi">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Finaliza Carousel-->
-
     
 <!--MODAL CARRITO LLENO-->
 <div class="modal fade" id="idModalCarrito" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

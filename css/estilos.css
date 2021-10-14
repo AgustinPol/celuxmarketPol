@@ -11,14 +11,6 @@ header {
   background: -webkit-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   background: linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1); }
-  header .divLogo {
-    width: 100%;
-    height: 65%;
-    animation-name: mostrar;
-    animation-duration: 0.5s; }
-  header .logoImagen {
-    width: 25rem;
-    height: 25rem; }
 
 /*FOOTER*/
 footer {
@@ -121,6 +113,7 @@ footer {
 
 /*estilos títulos*/
 .title {
+  display: inline-block;
   margin-bottom: 4rem;
   margin-top: 4rem;
   margin-left: 3rem;
@@ -136,25 +129,13 @@ footer {
   padding: 0.4rem;
   margin-left: 1.3rem; }
 
-h1 {
-  font-family: "Lato", sans-serif;
-  color: #4f9ce4;
-  font-size: 3.2rem;
-  font-weight: bold;
-  text-align: start;
-  padding: 1rem;
-  margin-right: 0.7rem;
-  margin-left: 1.3rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem; }
-
 /*estilos productos index*/
 .divProductos {
   border: solid 0.1rem black; }
 
 .divProductos__preciosCelus {
   font-family: "Lato", sans-serif;
-  color: #fff;
+  color: #e48d8d;
   font-size: 1.9rem;
   font-weight: bold;
   text-align: center;
@@ -178,19 +159,6 @@ h1 {
   padding: 0.5rem;
   display: block; }
 
-/*ESTILOS Fichas Técnicas*/
-.divFichas, .divFichas--celular, .divFichas--accesorio {
-  font-size: 2rem;
-  text-align: start;
-  letter-spacing: 0.2rem;
-  font-weight: bold; }
-
-.divFichas--celular {
-  color: #4f9ce4; }
-
-.divFichas--accesorio {
-  color: #e48d8d; }
-
 .title-celular {
   color: #4f9ce4;
   font-size: 2rem;
@@ -208,70 +176,6 @@ h1 {
   margin-top: 2rem;
   padding: 1rem;
   font-weight: bold; }
-
-/*estilos celus y accesorios*/
-.divCelus {
-  background-color: #fff;
-  height: 30rem;
-  width: 30rem;
-  margin: 3rem;
-  padding: 3rem;
-  border: solid #959da8;
-  border-radius: 2rem;
-  display: block; }
-
-.divCelus__preciosCelus2 {
-  font-family: "Lato", sans-serif;
-  color: #fff;
-  font-size: 1.9rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border: solid #b1b1a3;
-  background-color: #e48d8d; }
-
-.divCelus__preciosCelus2--bordesColor {
-  color: #fff;
-  background-color: #e48d8d;
-  font-size: 1.9rem;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  border: solid black;
-  margin-bottom: 1rem;
-  padding: 1rem; }
-
-.divCelus__celusTitle {
-  font-family: "Lato", sans-serif;
-  color: #4f9ce4;
-  font-size: 2.2rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 0.5rem;
-  padding: 0.5rem; }
-
-.divCelus__imgDetalles {
-  width: 16rem;
-  height: 15rem;
-  margin: auto;
-  display: block;
-  align-content: center; }
-
-.divBoton {
-  width: 15rem;
-  height: 5rem;
-  background-color: #4f9ce4;
-  margin: 2.5rem;
-  margin-left: 3rem; }
-
-.divBoton__botonComprar {
-  font-family: "Lato", sans-serif;
-  letter-spacing: 0.1rem;
-  color: #fff;
-  font-size: 3rem;
-  text-align: center; }
 
 /*Página error 404*/
 .error404 {
@@ -299,7 +203,8 @@ h1 {
   font-weight: bold;
   display: block;
   margin: auto;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 .imgInfo {
   width: 17rem;
@@ -324,7 +229,8 @@ h1 {
   height: 3.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white; }
+  color: white;
+  background-color: black; }
 
 .itemCarrito {
   background-image: linear-gradient(to right, rgba(49, 49, 49, 0.808), rgba(0, 0, 0, 0.8)); }
@@ -454,18 +360,36 @@ html {
 button {
   margin: 1rem; }
 
+h1 {
+  font-family: "Lato", sans-serif;
+  color: #4f9ce4;
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: start;
+  padding: 1rem;
+  margin-right: 0.7rem;
+  margin-left: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; }
+
 /*CAROUSEL*/
 .carouselSize {
   width: 100%;
-  height: 55rem;
-  display: block;
+  height: 32rem;
+  display: inline-block;
   margin: auto;
-  margin-top: 2rem;
   align-content: center; }
 
 .imgCarousel {
-  width: 10rem;
-  height: 50rem; }
+  width: 12rem;
+  height: 32rem;
+  border-radius: 5px; }
+
+.img-logo {
+  display: block;
+  margin: auto;
+  width: 25rem;
+  height: 30rem; }
 
 /*ACORDEÓN*/
 .acordeon {

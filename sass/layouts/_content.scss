@@ -1,5 +1,6 @@
 /*estilos títulos*/
 .title {
+    display: inline-block;
     margin-bottom: 4rem;
     margin-top: 4rem;
     margin-left: 3rem;
@@ -12,20 +13,13 @@
     margin-left: 1.3rem;
 }
 
-h1 { @include tipografía1 
-    ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
-    margin-right: 0.7rem;
-    margin-left: 1.3rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-}
 /*estilos productos index*/
 .divProductos {
     border: solid 0.1rem black;
 }
 
 .divProductos__preciosCelus { @include tipografía1 
-    ($myfont, #fff, 1.9rem, bold, null, center, 1px, 1px, null);
+    ($myfont, $mypink, 1.9rem, bold, null, center, 1px, 1px, null);
 }
 
 .divProductos__celuTitle { @include tipografía1
@@ -41,24 +35,6 @@ h1 { @include tipografía1
     display: block;
 }
 
-
-/*ESTILOS Fichas Técnicas*/
-.divFichas {
-    font-size: 2rem;
-    text-align: start;
-    letter-spacing: 0.2rem;
-    font-weight: bold;
-}
-
-$producto: (celular: $myblue, accesorio: $mypink);
-
-@each $nombre, $color in $producto {
-    .divFichas--#{$nombre} {
-        color: $color;
-        @extend .divFichas; 
-    } 
-}
-
 $tipo: (celular: $myblue, accesorio: $mypink);
 
 @each $nombre, $color in $tipo {
@@ -71,73 +47,6 @@ $tipo: (celular: $myblue, accesorio: $mypink);
         padding: 1rem;
         font-weight: bold;
     }
-}
-/*estilos celus y accesorios*/
-.divCelus {
-    background-color: #fff;
-    height: 30rem;
-    width: 30rem;
-    margin: 3rem;
-    padding: 3rem;
-    border: solid rgb(149, 157, 168);
-    border-radius: 2rem;
-    display: block;
-}
-
-$producto: celular;
-
-.divCelus__preciosCelus2 {
-    @if $producto == celular {
-        @include tipografía1 
-        ($myfont, #fff, 1.9rem, bold, none, center, 0.5rem, 0.5rem, solid rgb(177, 177, 163) );
-        background-color: $mypink;
-    }
-     @else if $producto == accesorio {
-        @include tipografía1 
-        ($myfont, #fff, 1.9rem, bold, none, center, 0.5rem, 0.5rem, solid rgb(177, 177, 163) );
-        background-color: $myblue;
-    } 
-
-}
-
-.divCelus__preciosCelus2--bordesColor {
-    color: #fff;
-    background-color: $mypink;
-    font-size: 1.9rem;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    border: solid black;
-    margin-bottom: 1rem;
-    padding: 1rem;
-}
-
-.divCelus__celusTitle { @include tipografía1 
-    ($myfont, $myblue, 2.2rem, bold, null, center, 0.5rem, 0.5rem, null);
-}
-
-.divCelus__imgDetalles {
-    width: 16rem;
-    height: 15rem;
-    margin: auto;
-    display: block;
-    align-content: center;
-}
-
-.divBoton {
-    width: 15rem;
-    height:5rem;
-    background-color: $myblue;
-    margin: 2.5rem;
-    margin-left: 3rem;
-}
-
-.divBoton__botonComprar {
-    font-family: $myfont;
-    letter-spacing: 0.1rem;
-    color: #fff;
-    font-size: 3rem;
-    text-align: center;
 }
 
 /*Página error 404*/
@@ -171,6 +80,7 @@ $producto: celular;
     display: block;
     margin:auto;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }   
 
 .imgInfo {
@@ -200,6 +110,7 @@ $producto: celular;
     font-size: 1.5rem;
     font-weight: bold;
     color:white;
+    background-color: black;
 }
 
 .itemCarrito{
