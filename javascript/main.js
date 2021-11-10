@@ -11,12 +11,12 @@ class Producto{
         this.price = price;
     }
   }
-
+  
   const product1 = new Producto("1", "Redmi Note 7", "Xiaomi","images/redminote7.webp","celular", 1, 32499);
   baseDeDatos.push(product1);
-  const product2 = new Producto("2", "Redmi Note 8", "Xiaomi" , "images/redminote8.webp","celular",1, 42699);
+  const product2 = new Producto("2", "Auricular Basic", "Samsung", "images/au-sam-bla.webp", "accesorio", 1, 1699);
   baseDeDatos.push(product2);
-  const product3 = new Producto("3", "Redmi Note 9","Xiaomi", "images/redminote9.webp", "celular", 1, 46999);
+  const product3 = new Producto("3", "Auricular Basic", "Motorola", "images/au-moto-bla.webp", "accesorio", 1, 3999);
   baseDeDatos.push(product3);
   const product4 = new Producto("4", "Moto G7 Plus", "Motorola", "images/motog5.webp", "celular", 1,32999);
   baseDeDatos.push(product4);
@@ -24,9 +24,9 @@ class Producto{
   baseDeDatos.push(product5);
   const product6 = new Producto("6", "Moto E7 Plus","Motorola", "images/motoe7plus.webp", "celular", 1, 18999);
   baseDeDatos.push(product6);
-  const product7 = new Producto("7", "Auricular Basic", "Samsung", "images/au-sam-bla.webp", "accesorio", 1, 1699);
+  const product7 = new Producto("7","Redmi Note 8", "Xiaomi" , "images/redminote8.webp","celular",1, 42699);
   baseDeDatos.push(product7);
-  const product8 = new Producto("8", "Auricular Basic", "Motorola", "images/au-moto-bla.webp", "accesorio", 1, 3999);
+  const product8 = new Producto("8","Redmi Note 9","Xiaomi", "images/redminote9.webp", "celular", 1, 46999);
   baseDeDatos.push(product8);
   const product9 = new Producto("9", "Moto Pulse Max", "Motorola", "images/au-pulse-max.webp", "accesorio", 1, 2499);
   baseDeDatos.push(product9);
@@ -199,4 +199,3 @@ function renderizarProductos(filtro = 'default') {
 });
 DOMCards.innerHTML = (mostrar);
 }
-
