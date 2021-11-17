@@ -28,7 +28,8 @@ footer {
     height: 60%;
     grid-template-columns: repeat(2, 20%);
     grid-template-rows: auto;
-    grid-template-areas: "title title" "face insta"; }
+    grid-template-areas: "title title"
+ "face insta"; }
     footer .faceInsta .divRedes {
       display: inline-block;
       width: 5.5rem;
@@ -413,7 +414,7 @@ input {
   font-size: 1.5rem; }
 
 #modalCarritoVacio {
-  background-image: linear-gradient(to right, rgba(211, 124, 118, 0.808), rgba(0, 0, 0, 0.8)); }
+  background-image: linear-gradient(to right, rgba(61, 126, 180, 0.808), rgba(0, 0, 0, 0.8)); }
 
 #capturaDatosCliente {
   background-image: linear-gradient(to right, rgba(120, 202, 157, 0.808), rgba(0, 0, 0, 0.8)); }
