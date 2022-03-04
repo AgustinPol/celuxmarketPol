@@ -16,6 +16,9 @@
 /*estilos productos index*/
 .divProductos {
     border: solid 0.1rem black;
+    margin: 1.5rem;
+    padding: 1rem;
+    box-shadow: 11px 10px 28px -2px rgba(0,0,0,0.75);
 }
 
 .divProductos__preciosCelus { @include tipografía1 

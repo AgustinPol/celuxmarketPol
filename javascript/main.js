@@ -103,14 +103,13 @@ function eliminarDelCarrito() {
     document.getElementById("contador-carrito").innerHTML = carritoDeCompras.reduce((acc, el)=> acc + el.quantity,0);
 };
 
-//GENERA EL LINK DE MP
-// function btnComprar() {
-//   if (carritoDeCompras.length === 0) {
-//     $("#modalCarritoVacio").modal("show");
-//   } else {
-//     linkDePago();
-//   }
-// }
+function btnComprar() {
+  if (carritoDeCompras.length === 0) {
+    $("#modalCarritoVacio").modal("show");
+  } else {
+    linkDePago();
+  }
+}
 
 function modalCarrito(e) {
   e.preventDefault();
