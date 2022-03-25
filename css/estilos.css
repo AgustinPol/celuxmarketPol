@@ -131,6 +131,8 @@ footer {
 
 /*estilos productos index*/
 .divProductos {
+  height: 55rem;
+  width: 35rem;
   border: solid 0.1rem black;
   margin: 1.5rem;
   padding: 1rem;
