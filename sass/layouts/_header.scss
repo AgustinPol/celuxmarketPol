@@ -1,8 +1,11 @@
  /*HEADER*/ 
 header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.5rem;
     width: 100%;
-    height: 100%;
+    height: 20vh;
     background: rgb(19,72,119);
     background: -moz-linear-gradient(135deg, rgba(19,72,119,1) 0%, rgba(16,120,198,1) 0%, rgba(16,120,198,1) 40%, rgba(11,23,33,1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(19,72,119,1) 0%, rgba(16,120,198,1) 0%, rgba(16,120,198,1) 40%, rgba(11,23,33,1) 100%);
