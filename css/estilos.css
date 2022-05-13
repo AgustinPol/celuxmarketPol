@@ -3,17 +3,8 @@
 /*LAYOUTS*/
 /*HEADER*/
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 2.5rem;
-  width: 100%;
-  height: 20vh;
-  background: #134877;
-  background: -moz-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
-  background: -webkit-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
-  background: linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1); }
+  width: 100%; }
 
 /*FOOTER*/
 footer {
@@ -113,6 +104,10 @@ footer {
   display: block;
   margin: 2rem;
   align-content: center; }
+
+* {
+  padding: 0;
+  margin: 0; }
 
 /*estilos títulos*/
 .title {
@@ -264,85 +259,12 @@ footer {
   margin-top: 2rem; }
 
 /*COMPONENTS*/
-/*MENU DESPLEGABLE*/
-.menu {
-  margin: 0%;
-  padding: 0%; }
-  .menu .menu ul {
-    color: rgba(0, 0, 0, 0.3);
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    justify-content: flex-start; }
-    .menu .menu ul ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0%;
-      background: #4f9ce4;
-      padding: 0; }
-      .menu .menu ul ul a {
-        line-height: 90%;
-        padding: 10%; }
-      .menu .menu ul ul li {
-        float: none;
-        width: 17.5rem;
-        z-index: 2; }
-    .menu .menu ul li {
-      position: relative;
-      float: left;
-      margin: 0%;
-      padding: 0%; }
-      .menu .menu ul li a {
-        display: block;
-        padding: 1rem 1rem;
-        margin: 1rem 1rem;
-        color: #fff;
-        text-decoration: none; }
-    .menu .menu ul a {
-      display: block;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 2rem;
-      padding: 15px;
-      margin: 1px;
-      font-family: 'lato', sans-serif;
-      letter-spacing: 4px;
-      color: #fff; }
-    .menu .menu ul .horizontal li {
-      display: block;
-      float: left;
-      padding: 0%;
-      margin: 0%; }
-    .menu .menu ul li:hover {
-      background: rgba(0, 0, 0, 0.3);
-      z-index: 3; }
-    .menu .menu ul li:hover > ul {
-      display: block; }
-
-/*MODIFICACIONES DEL MENÚ DE BOOTSTRAP*/
-.menuAgus {
+.miMenu {
   background: #134877;
   background: -moz-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   background: -webkit-linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   background: linear-gradient(135deg, #134877 0%, #1078c6 0%, #1078c6 40%, #0b1721 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#134877",endColorstr="#0b1721",GradientType=1); }
-
-.dropdown-item {
-  margin: auto;
-  width: auto;
-  height: auto; }
-
-.dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.navbar-toggler-icon {
-  width: 3em;
-  height: 3em; }
-
-.colorNavbar {
-  color: #fff !important; }
 
 /*TAGS*/
 html {
