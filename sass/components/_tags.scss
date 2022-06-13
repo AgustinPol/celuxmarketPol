@@ -1,3 +1,5 @@
+
+
 /*TAGS*/
 html {
     font-size: 62.5%;   
@@ -21,16 +23,16 @@ body {
 
 }
 
-button {
-    margin: 1rem;
-}
-
 h1 { @include tipografía1 
     ($myfont, $myblue, 3.2rem, bold, null, start, null, 1rem, null);
     margin-right: 0.7rem;
     margin-left: 1.3rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    animation-iteration-count: infinite;
+    animation-name: mostrar;
+    animation-duration: 1.5s;
+    animation-delay: 5s;
 }
 
 input {
