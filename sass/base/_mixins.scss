@@ -1,8 +1,8 @@
-@mixin tipografía1 ($fuente, $color, $size, $bold, $decoration, $align, $margen, $padd, $borde) {
-    font-family: $fuente;
+@mixin tipografía1 ($family, $color, $size, $weight, $decoration, $align, $margen, $padd, $borde) {
+    font-family: $family;
     color: $color;
     font-size: $size;
-    font-weight: $bold;
+    font-weight: $weight;
     text-decoration: $decoration;
     text-align: $align;
     margin: $margen;
